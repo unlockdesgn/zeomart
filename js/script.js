@@ -1180,26 +1180,15 @@
         });        
     });
     
-    //  Fixed sidebar Custom Script For That 
-    $(function() {
-      var cols = $('.wrap .column');
-      var enabled = true;
-      var scrollbalance = new ScrollBalance(cols, {
-        minwidth: 1199
-      });
-      // bind to scroll and resize events
-      scrollbalance.bind();
-    });
-
 
 /* ======
    When document is ready, do
    ====== */
     $(document).on('ready', function() {
-        // add your functions
-        navbarScrollfixed();
-        scrollToTop();
-        mobileNavToggle();
+      // add your functions
+      navbarScrollfixed();
+      scrollToTop();
+      mobileNavToggle();
     });
     
 /* ======
@@ -1207,12 +1196,12 @@
    ====== */
     // window on Load function
     $(window).on('load', function() {
-        // add your functions
-        preloaderLoad();
+      // add your functions
+      preloaderLoad();
     });
     // window on Scroll function
     $(window).on('scroll', function() {
-        // add your functions
+      // add your functions
     });
 
 

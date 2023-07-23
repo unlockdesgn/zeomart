@@ -319,3 +319,15 @@
 
   return ScrollBalance;
 }));
+
+  //  Fixed sidebar Custom Script For That 
+  function scrollBalance() {
+    var cols = $('.wrap .column');
+    var enabled = true;
+    var scrollbalance = new ScrollBalance(cols, {
+      minwidth: 1199
+    });
+    // bind to scroll and resize events
+    scrollbalance.bind();  
+  }
+  scrollBalance();
